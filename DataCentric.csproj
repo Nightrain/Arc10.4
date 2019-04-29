@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4D24422E-7F53-4415-A1D0-7387F6678CA4}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataCentric</RootNamespace>
+    <AssemblyName>DataCentric</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <StartupObject>
+    </StartupObject>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="bobResize, Version=1.0.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Round_2\Utilities\bobResize\bin\bobResize.dll</HintPath>
+    </Reference>
+    <Reference Include="DesignbyContract1, Version=1.0.2353.14804, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Round_2\Utilities\DesignbyContract1\bin\Debug\DesignbyContract1.dll</HintPath>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.AnalysisTools, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Carto, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataManagementTools, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataSourcesFile, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Display, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Framework, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geodatabase, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geometry, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geoprocessing, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geoprocessor, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.System, Version=9.3.0.1770, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Version, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="inputBox, Version=1.0.2705.17677, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Round_2\Utilities\inputBox\bin\Debug\inputBox.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MathNet.Numerics, Version=0.3.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Round_2\Utilities\MathNet.Numerics-v0.3\bin\MathNet.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="txtBoxArray, Version=1.0.2704.26301, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Round_2\Utilities\txtBoxArray\bin\Debug\txtBoxArray.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animal.cs" />
+    <Compile Include="AnimalAtributes.cs" />
+    <Compile Include="AnimalManager.cs" />
+    <Compile Include="AnimalMap.cs" />
+    <Compile Include="AnimalValidator.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="DataManipulator.cs" />
+    <Compile Include="DeadAnimal.cs" />
+    <Compile Include="frmMapSelectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMapTimes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModifierInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSeason.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmYearlyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeRangeBuilder.cs" />
+    <Compile Include="BeamMeHomeScottyMover.cs" />
+    <Compile Include="BehaviorModifier.cs" />
+    <Compile Include="BestComboHomeRangeFinder.cs" />
+    <Compile Include="BestFoodHomeRangeFinder.cs" />
+    <Compile Include="BestRiskHomeRangeFinder.cs" />
+    <Compile Include="ClosestHomeRangeFinder.cs" />
+    <Compile Include="CraptasticXmlException.cs" />
+    <Compile Include="crossOverInfo.cs" />
+    <Compile Include="DailyModiferCollection.cs" />
+    <Compile Include="DailyModifier.cs" />
+    <Compile Include="DirectedMover.cs" />
+    <Compile Include="Duration.cs" />
+    <Compile Include="EligibleHomeSite.cs" />
+    <Compile Include="EligibleHomeSites.cs" />
+    <Compile Include="FemaleAnimal.cs" />
+    <Compile Include="FemaleModifier.cs" />
+    <Compile Include="frmInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenderModifier.cs" />
+    <Compile Include="HomeRangeCriteria.cs" />
+    <Compile Include="HomeRangeFinder.cs" />
+    <Compile Include="HourlyModifier.cs" />
+    <Compile Include="HourlyModifierCollection.cs" />
+    <Compile Include="IAttributeObserver.cs" />
+    <Compile Include="IHomeRangeCriteria.cs" />
+    <Compile Include="IHomeRangeFinder.cs" />
+    <Compile Include="IHomeRangeTrigger.cs" />
+    <Compile Include="InitialAnimalAttributes.cs" />
+    <Compile Include="InitialResidentInfo.cs" />
+    <Compile Include="InvalidMapException.cs" />
+    <Compile Include="IPointList.cs" />
+    <Compile Include="MaleAnimal.cs" />
+    <Compile Include="MaleModifier.cs" />
+    <Compile Include="Map.cs" />
+    <Compile Include="MapManager.cs" />
+    <Compile Include="Maps.cs" />
+    <Compile Include="MapSwapTrigger.cs" />
+    <Compile Include="MapValue.cs" />
+    <Compile Include="MemoryMap.cs" />
+    <Compile Include="Modifier.cs" />
+    <Compile Include="Mover.cs" />
+    <Compile Include="ObservableAttribute.cs" />
+    <Compile Include="OutPutManage.cs" />
+    <Compile Include="Point.cs" />
+    <Compile Include="Program.cs" />
+    <EmbeddedResource Include="frmInput.resx">
+      <DependentUpon>frmInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMapSelectForm.resx">
+      <DependentUpon>frmMapSelectForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMapTimes.resx">
+      <DependentUpon>frmMapTimes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModifierInput.resx">
+      <DependentUpon>frmModifierInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSeason.resx">
+      <DependentUpon>frmSeason.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmYearlyForm.resx">
+      <DependentUpon>frmYearlyForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="RandomNumbers.cs" />
+    <Compile Include="RandomWCMover.cs" />
+    <Compile Include="Resident.cs" />
+    <Compile Include="ResidentAttributes.cs" />
+    <Compile Include="Resting.cs" />
+    <Compile Include="RiskyForage.cs" />
+    <Compile Include="RiskySearch.cs" />
+    <Compile Include="SafeForage.cs" />
+    <Compile Include="SafeSearch.cs" />
+    <Compile Include="SimulatonManager.cs" />
+    <Compile Include="SiteHomeRangeTrigger.cs" />
+    <Compile Include="SleepMover.cs" />
+    <Compile Include="StraightMover.cs" />
+    <Compile Include="TemporalModifiers.cs" />
+    <Compile Include="TextFileWriter.cs" />
+    <Compile Include="TimeHomeRangeTrigger.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ArcGISCodeMigration_Log.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>call "$(DevEnvDir)..\..\vc\vcvarsall.bat" x86;
+
+"$(DevEnvDir)..\..\vc\bin\EditBin.exe" "$(TargetPath)"  /LARGEADDRESSAWARE</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
